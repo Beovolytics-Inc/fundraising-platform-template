@@ -1,0 +1,421 @@
+<!doctype html>  
+<!--[if IE 6 ]><html lang="en-us" class="ie6"> <![endif]-->
+<!--[if IE 7 ]><html lang="en-us" class="ie7"> <![endif]-->
+<!--[if IE 8 ]><html lang="en-us" class="ie8"> <![endif]-->
+<!--[if (gt IE 7)|!(IE)]><!-->
+<html lang="en-us"><!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+
+        <title>Documentation Ideapress - Crowdfunding HTML5 Template</title>
+
+        <meta name="description" content="">
+        <meta name="author" content="">
+        <meta name="copyright" content="">
+
+        <link rel="stylesheet" href="assets/js/google-code-prettify/prettify.css" media="all">
+        <link rel="stylesheet" href="assets/css/style.css" media="all">
+        <script type="text/javascript" src="assets/js/jquery-1.12.4.js"></script>
+        <script type="text/javascript" src="assets/js/google-code-prettify/prettify.js"></script>
+        <script type="text/javascript" src="assets/js/main.js"></script>
+    </head>
+    <body>
+        <div id="wrapper">
+            <aside id="doc-sidebar">
+                <div class="site-brand">
+                    <a href="#">
+                        <img src="assets/images/logo.png" alt="Logo">
+                    </a>
+                </div><!-- .site-brand -->
+
+                <nav class="docs-nav">
+                    <ul>
+                        <li><a class="active" href="#start">Start</a></li>
+                        <li><a href="#html" title="HTML Structure">HTML Structure</a></li>
+                        <li><a href="#css" title="CSS Files and Structure">CSS Files and Structure</a></li>
+                        <li><a href="#javascript" title="JavaScript">JavaScript</a></li>
+                        <li><a href="#source" title="Sources and Credits">Sources and Credits</a></li>
+                    </ul>
+                </nav>
+
+                <div class="copyright">
+                    <p>Copyright © 2018 by <a href="https://themesprite.com/">Themesprite</a></p>
+                </div><!-- .copyright -->
+            </aside><!-- #doc-sidebar -->
+
+            <div id="doc-content">
+                <section id="start">
+                    <h1>Ideapress - Crowdfunding HTML5 Template</h1>
+                    <h2>Copyright 2018 by <a href="http://themesprite.com/">Themesprite</a>. Powered by <strong>HTML5 & CSS3</strong></h2>
+                    <hr>
+                    <ul>
+                        <li>Created: 25/04/2018</li>
+                        <li>Latest Update: 25/04/2018</li>
+                        <li>Version: 1.0</li>
+                        <li>By: <a href="http://themesprite.com/">Themesprite</a></li>
+                        <li>Live demo: <a target="_blank" href="http://demo.themesprite.com/html/ideapress/">http://demo.themesprite.com/html/ideapress/</a></li>
+                    </ul>
+                    <hr>
+                    <p>Ideapress aims to make it as simple as possible to create a new campaign on your crowdfunding website. Its takes just four steps to launch a new campaign, so whether it’s you the site owner, or a visitor, creating a new campaign, there won’t be anything getting in the way.</p>
+                    <p> Thank you very much for purchasing our site template. If you have any questions that are beyond the scope of this help file, please feel free to email us via our user page contact form. </p>
+                    <p>If you want to collaborate to create a CMS version, please contact me at <a href="mailto:andrew@themesprite.com">andrew@themesprite.com</a></p>
+                </section><!-- #start -->
+
+                <section id="html">
+                    <div class="heading">
+                        <h3>HTML Structure</h3>
+                        <hr>
+                    </div>
+                   
+                    <p><strong>Header</strong></p>
+
+<pre class="prettyprint">
+    &lt;header id="header" class="site-header"&gt;
+        &lt;div class="top-header cleafix"&gt;
+            &lt;div class="container"&gt;
+                [ SOCIALS ] [ PHONE ]
+            &lt;/div&gt;&lt;!-- .container --&gt;
+        &lt;/div&gt;&lt;!-- .top-header --&gt;
+        &lt;div class="content-header"&gt;
+            &lt;div class="container"&gt;
+                &lt;div class="site-brand"&gt;
+                    [ LOGO ]
+                &lt;/div&gt;&lt;!-- .site-brand --&gt;
+
+                &lt;div class="right-header"&gt;
+                    &lt;nav class="main-menu"&gt;
+                        &lt;button class="c-hamburger c-hamburger--htx"&gt;&lt;span&gt;&lt;/span&gt;&lt;/button&gt;
+                        [ MENU LIST ]
+                    &lt;/nav&gt;&lt;!-- .main-menu --&gt;
+
+                    &lt;div class="search-icon"&gt;
+                        [ SEARCH ]
+                    &lt;/div&gt;&lt;!-- .search-icon --&gt;
+                    &lt;div class="login login-button"&gt;
+                        &lt;a class="btn-primary" href="login.html"&gt;Login&lt;/a&gt;
+                    &lt;/div&gt;&lt;!-- .login --&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;&lt;!-- .container --&gt;
+        &lt;/div&gt;&lt;!-- .content-header --&gt;
+    &lt;/header&gt;&lt;!-- .site-header --&gt;
+</pre><!-- End Header -->
+
+<p><strong>Page Title</strong></p>
+
+<pre class="prettyprint">
+    &lt;section class="page-title background-page" style="background-image: url([ BACKGROUND URL ]);"&gt;
+        &lt;div class="container"&gt;
+            &lt;h1&gt;[ PAGE TITLE ]&lt;/h1&gt;
+            &lt;div class="breadcrumbs"&gt;
+                [ BREADCRUMBS ]
+            &lt;/div&gt;
+        &lt;/div&gt;&lt;!-- container --&gt;
+    &lt;/section&gt;&lt;!-- page-title --&gt;
+</pre><!-- End Page Title -->
+                    
+                    <p><strong>Content Full Width</strong></p>
+
+<pre class="prettyprint">
+    &lt;main id="main" class="site-main"&gt;
+        [ PAGE TITLE ]
+
+        &lt;div id="content" class="page-content"&gt;
+            &lt;div class="container"&gt;
+                &lt;div class="row"&gt;
+                    &lt;div class="col-lg-12 main-content"&gt;
+                        [ THE CONTENT ]
+                    &lt;/div&gt;&lt;!-- .main-content--&gt;
+                &lt;/div&gt;&lt;!-- .row --&gt;
+            &lt;/div&gt;&lt;!-- .container --&gt;
+        &lt;/div&gt;&lt;!-- .site-content --&gt;
+    &lt;/main&gt;&lt;!-- .site-main --&gt;
+</pre><!-- End Content Full Width -->
+
+                <p><strong>Content With Sidebar</strong></p>
+
+<pre class="prettyprint">
+    &lt;main id="main" class="site-main"&gt;
+        [ PAGE TITLE ]
+
+        &lt;div id="content" class="page-content"&gt;
+            &lt;div class="container"&gt;
+                &lt;div class="row"&gt;
+                    &lt;div class="main-content col-lg-8"&gt;
+                        [ THE CONTENT ]
+                    &lt;/div&gt;&lt;!-- .inner-content --&gt;
+
+                    &lt;div class="sidebar col-md-4"&gt;
+                        [ SIDEBAR ]
+                    &lt;/div&gt;&lt;!-- .sidebar --&gt;
+                &lt;/div&gt;&lt;!-- .row --&gt;
+            &lt;/div&gt;&lt;!-- .container --&gt;
+        &lt;/div&gt;&lt;!-- .site-content --&gt;
+    &lt;/main&gt;&lt;!-- .site-main --&gt;
+</pre><!-- End Content Full Width -->
+    
+
+<p><strong>Footer</strong></p>
+
+<pre class="prettyprint">
+    &lt;footer id="footer" class="site-footer"&gt;
+            &lt;div class="footer-menu"&gt;
+                &lt;div class="container"&gt;
+                    [ MENU FOOTER ]
+                &lt;/div&gt;
+            &lt;/div&gt;
+            &lt;div class="footer-top"&gt;
+                [ Payment ]
+            &lt;/div&gt;
+            &lt;div class="footer-copyright"&gt;
+                [ COPYRIGHT TEXT ]
+            &lt;/div&gt;
+    &lt;/footer&gt;&lt;!-- .site-footer --&gt;
+</pre><!-- End Footer -->
+
+                </section><!-- #html -->
+
+                <section id="css">
+                    <div class="heading">
+                        <h3>CSS Files and Structure</h3>
+                        <hr>
+                    </div>
+                    <p>This theme uses <strong>style.css</strong> file as main CSS file and other additional css files located at css folder.</p>
+
+                    <p><strong>style.css</strong></p>
+                    <p>Main CSS files in this theme is style.css that contains all of specific stylings for the theme.The file is separated into sections using labels as follows:</p> 
+
+<pre class="prettyprint lines">     
+    1. Body
+      1.1 Normalize CSS
+    2. Header / #header
+    3. Main / #main
+        3.1. Layout three / #layout-three
+        3.2. Blogs / #blogs
+        3.3. Blog Details / #blog-details
+        3.4. 404 / #404
+        3.5. About us / #about-us
+        3.6. Contact us / #contact-us
+        3.7. Login / #login
+        3.8. Shop Cart / #shop-cart
+        3.9. Shop / #shop
+        3.10. Coming soon / #coming soon
+        3.11. Campaign Details / #campaign-details
+        3.12. Home V2 / #home-v2
+        3.13. Explore Layout One / #explore-layout-one
+        3.14. Explore Layout Two / #explore-layout-two
+        3.15. FAQ / #faq
+        3.16. Account / #account
+        3.17. Create A Campaign
+    4. Footer / #footer
+
+</pre>
+                    <p>If you would like to edit a specific section of the site, simply find the appropriate label in the CSS file, and then scroll down until you find the appropriate style that needs to be edited.</p> 
+
+                    <p><strong>responsive.css</strong></p> 
+                            <p>responsive.css contains styling for media queries that allows us to tailor to different resolutions and devices without changing the content. The file is separated into sections as follows:</p>
+<pre class="prettyprint">   
+    @media only screen and (max-width: 1200px) {
+        [ SOME CODE ]
+    }
+
+    @media only screen and (max-width: 989px) {
+        [ SOME CODE ]
+    }
+
+    @media only screen and (max-width: 767px) {
+        [ SOME CODE ]
+    }
+
+    @media only screen and (max-width: 600px) {
+        [ SOME CODE ]
+    }
+
+    @media only screen and (max-width: 540px) {
+        [ SOME CODE ]
+    }
+
+    @media only screen and (max-width: 480px) {
+        [ SOME CODE ]
+
+    }
+    @media only screen and (max-width: 360px) {
+        [ SOME CODE ]
+
+    }
+</pre>
+
+                    <p>If you would like to edit styling of the specific device width, simply find the appropriate label in the <strong>responsive.css</strong> file, and then scroll down until you find the appropriate style that needs to be edited.</p> 
+                    <p><strong>Additional css files at css folder</strong></p>
+                    <ol>
+                        <li><strong>css/responsive.css</strong> - Resopnsive CSS</li>
+                        <li><strong>style.css</strong> - Main Style</li>
+                    </ol>
+
+                    <p><strong>Additional css files at libs folder</strong></p>
+                    <ol>
+                        <li><strong>libs/bootstrap/css/bootstrap.min.css</strong> - Twitter Boostrap framework</li>
+                        <li><strong>libs/font-awesome/css/font-awesome.min.css</strong> - Font Awesome</li>
+                        <li><strong>libs/animate/animate.css</strong> - Animate Css</li>
+                        <li><strong>libs/ionicons/css/ionicons.min.css</strong> - Ionicons</li>
+                        <li><strong>libs/owl-carousel/assets/owl.carousel.css</strong> - Owl Carousel</li>
+                        <li><strong>libs/owl-carousel/assets/owl.theme.default.css</strong> - Owl Carousel</li>
+                        <li><strong>libs/owl-carousel/assets/owl.theme.min.css</strong> - Owl Carousel</li>
+                        <li><strong>libs/owl-carousel/assets/owl.transitions.min.css</strong> - Owl Carousel</li>
+                        <li><strong>libs/owl-carousel/assets/carousel.min.css</strong> - Owl Carousel</li>
+                        <li><strong>libs/bxslider/jquery.bxslider.min.css</strong> - Bxslider</li>
+                        <li><strong>libs/magicsuggest/magicsuggest-min.css</strong> - Magicsuggest</li>
+                        <li><strong>libs/quilljs/css/quill.bubble.css</strong> - Quill Js</li>
+                        <li><strong>libs/quilljs/css/quill.core.css</strong> - Quill Js</li>
+                        <li><strong>libs/quilljs/css/quill.snow.css</strong> - Quill Js</li>
+                    </ol>
+                </section><!-- #css -->
+
+                <section id="javascript">
+                    <div class="heading">
+                        <h3>JavaScript</h3>
+                        <hr>
+                    </div>
+                    <p>This theme imports following js files.</p>
+                    <ol>
+                        <li><strong>js/jquery-1.12.4.min.js</strong> - jQuery core library v1.12.4</li>
+                        <li><strong>js/main.js</strong> - Main JS</li>
+                    </ol>
+
+                    <p>This theme imports following libs files.</p>
+                    <ol>
+                        <li><strong>libs/bootstrap/js/bootstrap.min.js</strong> - Twitter Boostrap framework</li>
+                        <li><strong>libs/popper/popper.js</strong> - Popper</li>
+                        <li><strong>libs/owl-carousel/carousel.min.js</strong> - OWL Carousel</li>
+                        <li><strong>libs/owl-carousel/owl.carousel.min.js</strong> - OWL Carousel</li>
+                        <li><strong>libs/bxslider/jquery.bxslider.min.js</strong> - Bxslider</li>
+                        <li><strong>libs/jquery.countdown/jquery.countdown.min.js</strong> - Count Down</li>
+                        <li><strong>libs/magicsuggest/magicsuggest-min.js</strong> - Magicsuggest</li>
+                        <li><strong>libs/quilljs/js/quill.core.js</strong> - Jquery Quill</li>
+                        <li><strong>libs/quilljs/js/quill.js</strong> - Jquery Quill</li>
+                        <li><strong>libs/wow/wow.min.js</strong> - jQuery WOW</li>
+                        <li><strong>libs/isotope/isotope.pkgd.min.js</strong> - jquery Isotope</li>
+                    </ol>
+                        
+                    <p><strong>Main.js</strong> contains custom scripts and scripts to call method for above plugin. The file is separated in to sections with appropriate label.</p>
+            
+<pre class="prettyprint lines"> 
+    (function($) {
+        "use strict";
+        $(document).ready(function() {
+
+            /*  [ Menu Moblie ]
+            - - - - - - - - - - - - - - - - - - - - */
+                [ SOME CODE ]
+
+            /*  [ Back Top ]
+            - - - - - - - - - - - - - - - - - - - - */
+                [ SOME CODE ]
+
+            /*  [ Staff Picks Slider ]
+             - - - - - - - - - - - - - - - - - - - - */
+                [ SOME CODE ]
+
+            /*  [ Partners ]
+             - - - - - - - - - - - - - - - - - - - - */
+                [ SOME CODE ]
+
+            /*  [ Story Slider ]
+            - - - - - - - - - - - - - - - - - - - - */
+                [ SOME CODE ]
+
+            /*  [ Featured Places Slider ]
+             - - - - - - - - - - - - - - - - - - - - */
+                [ SOME CODE ]
+
+            /*  [ Owl Campaign ]
+             - - - - - - - - - - - - - - - - - - - - */
+                [ SOME CODE ]
+
+            /*  [ Owl Shop ]
+             - - - - - - - - - - - - - - - - - - - - */
+                [ SOME CODE ]
+
+            /*  [ Tab Controls ]
+             - - - - - - - - - - - - - - - - - - - - */
+                [ SOME CODE ]
+
+            /*  [ Menu Category ]
+             - - - - - - - - - - - - - - - - - - - - */
+                [ SOME CODE ]
+
+            /*  [ Project Love Slider ]
+             - - - - - - - - - - - - - - - - - - - - */
+                [ SOME CODE ]
+
+            /*  [ Search Form ]
+             - - - - - - - - - - - - - - - - - - - - */
+                [ SOME CODE ]
+
+            /*  [ Main Menu ]
+             - - - - - - - - - - - - - - - - - - - - */
+                [ SOME CODE ]
+
+            /*  [ Popup ]
+             - - - - - - - - - - - - - - - - - - - - */
+                [ SOME CODE ]
+
+            /*  [ Header Fixed ]
+             - - - - - - - - - - - - - - - - - - - - */
+                [ SOME CODE ]
+
+            /*  [ Sub Menu ]
+             - - - - - - - - - - - - - - - - - - - - */
+                [ SOME CODE ]
+
+            /*  [ Faq ]
+             - - - - - - - - - - - - - - - - - - - - */
+                [ SOME CODE ]
+
+            /*  [ jQuery Countdown ]
+             - - - - - - - - - - - - - - - - - - - - */
+                [ SOME CODE ]
+
+        });
+    })(jQuery);
+</pre>
+
+                </section><!-- #javascript -->
+
+                <section id="source">
+                    <div class="heading">
+                        <h3>Sources and Credits</h3>
+                        <hr>
+                    </div>
+                    <p>I've used the following images, icons or other files as listed.</p>
+                    
+                    <ol>
+                        <li><a target="_blank" href="http://jquery.com/download/">jquery-1.12.4</a></li>
+
+                        <li><a target="_blank" href="http://fontawesome.io/">Font Awesome</a></li>
+
+                        <li><a target="_blank" href="http://getbootstrap.com/">Twitter Bootstrap</a></li>
+
+                        <li><a target="_blank" href="http://countdownjs.org/">Countdown</a></li>
+
+                        <li><a target="_blank" href="https://github.com/OwlFonk/OwlCarousel">OWL Carousel</a></li>
+
+                        <li><a target="_blank" href="https://bxslider.com/">BxSlider</a></li>
+
+                        <li><a target="_blank" href="https://daneden.github.io/animate.css/">Animate Css</a></li>
+
+                        <li><a target="_blank" href="https://isotope.metafizzy.co/">Isotope</a></li>
+
+                        <li><a target="_blank" href="https://wowjs.uk/">jQuery Wow</a></li>
+
+                        <li><a target="_blank" href="http://nicolasbize.com/magicsuggest/">MagicSuggest</a></li>
+
+                        <li><a target="_blank" href="https://quilljs.com/">Quill</a></li>
+                    </ol>
+                </section><!-- #source -->
+
+            </div><!-- #doc-content -->
+        </div><!-- #wrapper -->
+
+        <script> prettyPrint(); </script>
+    </body>
+</html>
