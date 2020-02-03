@@ -1,0 +1,1 @@
+# fundraising-platform-template
